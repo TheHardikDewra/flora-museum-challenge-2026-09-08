@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Five Lives of a Bronze</title>
+<meta name="description" content="Standing Parvati, Chola ca. 920, rebuilt into the world she lived in. FLORA Museum Challenge entry by Hardik Dewra, 8 September 2026.">
+<meta property="og:title" content="Five Lives of a Bronze">
+<meta property="og:description" content="A Chola bronze was never meant to live in a glass case. Five true moments from the thousand years between the mould and the museum.">
+<meta property="og:image" content="assets/2-the-procession.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0c0c0c; --panel:#141414; --line:#262626;
+    --ink:#f0ece4; --mute:#96928a; --accent:#c9a227;
+    --sans:"Haffer","Inter",system-ui,-apple-system,sans-serif;
+    --mono:"Haffer Mono","JetBrains Mono",ui-monospace,SFMono-Regular,monospace;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-weight:300;line-height:1.5;-webkit-font-smoothing:antialiased}
+  a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--accent)}
+  a:hover{color:var(--accent)}
+  img{max-width:100%;display:block}
+  .wrap{max-width:1240px;margin:0 auto;padding:0 32px}
+  header{padding:96px 0 48px;border-bottom:1px solid var(--line)}
+  .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+  h1{font-weight:600;font-size:clamp(44px,7vw,104px);line-height:.95;letter-spacing:-.03em;margin:16px 0 24px}
+  .lede{font-size:clamp(18px,2vw,24px);max-width:820px;color:var(--mute);margin:0 0 40px}
+  .lede b{color:var(--ink);font-weight:600}
+  .meta{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:24px;border-top:1px solid var(--line);padding-top:24px}
+  .meta div{font-size:14px;color:var(--mute)}
+  .meta div span{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:6px}
+  .meta div a{font-weight:400}
+  section{padding:80px 0;border-bottom:1px solid var(--line)}
+  h2{font-weight:600;font-size:clamp(28px,4vw,48px);letter-spacing:-.02em;margin:8px 0 32px;line-height:1.05}
+  .strip{border:1px solid var(--line);background:var(--panel);overflow-x:auto}
+  .strip img{min-width:1600px;width:100%}
+  .source{display:grid;grid-template-columns:minmax(260px,1fr) 2fr;gap:48px;align-items:start}
+  .source figure{margin:0;border:1px solid var(--line);background:var(--panel);padding:16px}
+  .source figure img{width:100%;max-height:640px;object-fit:contain}
+  figcaption{font-family:var(--mono);font-size:12px;color:var(--mute);margin-top:12px;line-height:1.6}
+  .prose p{font-size:18px;color:var(--mute);max-width:64ch;margin:0 0 20px}
+  .prose p b{color:var(--ink);font-weight:600}
+  .life{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;padding:56px 0;border-top:1px solid var(--line)}
+  .life:first-of-type{border-top:0;padding-top:0}
+  .life:nth-child(even) .art{order:2}
+  .art{border:1px solid var(--line);background:var(--panel);overflow:hidden}
+  .art img{transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+  .art:hover img{transform:scale(1.03)}
+  .num{font-family:var(--mono);font-size:12px;letter-spacing:.14em;color:var(--accent)}
+  .life h3{font-weight:600;font-size:clamp(26px,3vw,40px);letter-spacing:-.02em;margin:8px 0 12px;line-height:1.05}
+  .life .when{font-family:var(--mono);font-size:13px;color:var(--mute);margin-bottom:16px}
+  .life p{font-size:17px;color:var(--mute);margin:0 0 12px;max-width:52ch}
+  .life p b{color:var(--ink);font-weight:600}
+  .pair{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:24px}
+  .pair figure{margin:0;border:1px solid var(--line);background:var(--panel);padding:12px}
+  .pair figure img{width:100%}
+  .graph{font-family:var(--mono);font-size:13px;line-height:1.7;color:var(--mute);background:var(--panel);border:1px solid var(--line);padding:24px;overflow-x:auto;white-space:pre;margin:24px 0 0}
+  .graph b{color:var(--accent);font-weight:600}
+  .links{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+  .links a{display:block;border:1px solid var(--line);background:var(--panel);padding:24px;font-weight:400;transition:border-color .3s}
+  .links a:hover{border-color:var(--accent)}
+  .links a span{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:8px}
+  footer{padding:48px 0 80px;color:var(--mute);font-size:14px}
+  footer a{font-weight:400}
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .9s ease,transform .9s cubic-bezier(.2,.7,.2,1)}
+  .reveal.in{opacity:1;transform:none}
+  @media (max-width:860px){
+    .source,.life,.pair{grid-template-columns:1fr}
+    .life:nth-child(even) .art{order:0}
+    header{padding-top:64px}
+    .wrap{padding:0 20px}
+  }
+  @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}.art img{transition:none}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="eyebrow">FLORA Museum Challenge, entry, 8 September 2026</div>
+    <h1>Five Lives<br>of a Bronze</h1>
+    <p class="lede"><b>A Chola bronze was never meant to live in a glass case.</b> She was cast to be dressed in silk, garlanded, and carried through the streets by lamplight. This entry takes the Met's tenth-century Standing Parvati and builds the world around her: five true moments from the thousand years between the mould and the museum.</p>
+    <div class="meta">
+      <div><span>Source</span><a href="https://www.metmuseum.org/art/collection/search/39325">Standing Parvati, The Met 57.51.3</a></div>
+      <div><span>Period</span>Chola, Tamil Nadu, ca. first quarter 10th century</div>
+      <div><span>Built in</span><a href="https://app.flora.ai/projects/ns75pfrkdk6fe2bk0kg78aynvh8e1e0t">FLORA canvas, every iteration</a></div>
+      <div><span>By</span><a href="https://contra.com/hardikdewra">Hardik Dewra</a></div>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap reveal">
+    <div class="eyebrow">The piece</div>
+    <h2>One bronze, five lives, one strip.</h2>
+    <div class="strip"><img src="assets/final-five-lives-of-a-bronze.jpg" alt="Five-panel strip: the mould, the procession, the burial, the plough, Gallery 240"></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap source reveal">
+    <figure>
+      <img src="assets/met-39325-standing-parvati.jpg" alt="Standing Parvati, Chola bronze, The Metropolitan Museum of Art">
+      <figcaption>Standing Parvati. Copper alloy, H. 69.5 cm. Bequest of Cora Timken Burnett, 1956. Open Access. Gallery 240.<br><a href="https://www.metmuseum.org/art/collection/search/39325">metmuseum.org/art/collection/search/39325</a></figcaption>
+    </figure>
+    <div class="prose">
+      <div class="eyebrow">Why her</div>
+      <h2>The case removes the life. So I put it back.</h2>
+      <p>Chola bronzes are <b>utsava murtis</b>, processional images. They lived in a sanctum, came out on festival nights dressed in silk and jasmine, and were carried on palanquins through the streets of the Kaveri delta. In a museum she stands stripped, silent and spotlit, and the label says nothing about any of that.</p>
+      <p>Instead of remixing her surface, the brief here is the second one in the challenge: <b>build the world around it</b>. The room she was made in, the street she was carried through, the pit she was hidden in, the field she was found in, and the gallery where she stands now.</p>
+      <p>I spend every morning on a practice whose whole point is to see the form of the Goddess. A Chola sthapati saw that form a thousand years ago and poured it into copper. This is that seeing, un-frozen.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="eyebrow reveal">The five lives</div>
+
+    <div class="life reveal">
+      <div class="art"><img src="assets/1-the-mould.png" alt="A bronze caster breaks open a clay mould and the goddess emerges"></div>
+      <div>
+        <div class="num">I</div>
+        <h3>The Mould</h3>
+        <div class="when">ca. 920 CE, a workshop in the Kaveri delta</div>
+        <p>Lost-wax casting. The wax goddess is coated in clay, the wax melts out, molten alloy pours in, and the mould is broken exactly once. <b>Every Chola bronze is one of one.</b></p>
+        <p>Rendered as 35mm film, a documentary from a century that had no cameras.</p>
+      </div>
+    </div>
+
+    <div class="life reveal">
+      <div class="art"><img src="assets/2-the-procession.png" alt="The bronze dressed in red silk and garlands, carried on a palanquin through a lamp-lit temple street at night"></div>
+      <div>
+        <div class="num">II</div>
+        <h3>The Procession</h3>
+        <div class="when">ca. 950 CE, a festival night</div>
+        <p>Silk, jasmine, gold, a thousand oil lamps, drummers, raised palms. <b>This is the life the museum case removes.</b> The hero frame of the series.</p>
+        <p>Rendered in cinematic colour.</p>
+      </div>
+    </div>
+
+    <div class="life reveal">
+      <div class="art"><img src="assets/3-the-burial.png" alt="Two priests lower the wrapped bronze into a pit at night by lamplight"></div>
+      <div>
+        <div class="num">III</div>
+        <h3>The Burial</h3>
+        <div class="when">ca. 1310 CE, before the raids</div>
+        <p>When the Sultanate armies reached the Tamil country, temple priests buried their bronzes to save them. <b>Many Chola bronzes in museums today were found this way.</b></p>
+        <p>Rendered as an oil painting, because this moment survives only as memory.</p>
+      </div>
+    </div>
+
+    <div class="life reveal">
+      <div class="art"><img src="assets/4-the-plough.png" alt="A farmer in a flooded paddy field beside his ox and plough, the bronze rising from the mud"></div>
+      <div>
+        <div class="num">IV</div>
+        <h3>The Plough</h3>
+        <div class="when">1932, a flooded paddy field</div>
+        <p>Farmers ploughing kept striking metal. That is how the buried bronzes came back into the world through the twentieth century, <b>one field at a time</b>.</p>
+        <p>Rendered in black and white, the documentary medium of that decade.</p>
+      </div>
+    </div>
+
+    <div class="life reveal">
+      <div class="art"><img src="assets/5-gallery-240.png" alt="The bronze in a glass case at the Met with the night procession reflected in the glass"></div>
+      <div>
+        <div class="num">V</div>
+        <h3>Gallery 240</h3>
+        <div class="when">2026, The Met, after closing</div>
+        <p>The case, the spotlight, and in the glass, faintly, the procession. <b>Her old life is still in the room if you look.</b></p>
+        <p>Rendered as museum photography, the medium of now.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap reveal">
+    <div class="eyebrow">Craft and process</div>
+    <h2>Everything on the canvas starts from the Met image.</h2>
+    <div class="prose">
+      <p>The Met photograph is the source node. Each life is an image-to-image generation wired to it (Nano Banana 2 on FLORA), holding her pose, crown and gesture while the world changes around her. Every scene is rendered in the medium of its own era, so the series reads like an archive that was never kept.</p>
+      <p><b>Gallery 240 took two passes.</b> The first lost the reflection idea and produced a plain vitrine. The second put her old life back on the glass. Both stay on the canvas.</p>
+    </div>
+    <div class="pair">
+      <figure><img src="assets/5-gallery-240-first-pass.png" alt="First pass of Gallery 240, plain vitrine"><figcaption>Pass 1. Correct room, no memory.</figcaption></figure>
+      <figure><img src="assets/5-gallery-240.png" alt="Second pass of Gallery 240 with the procession in the glass"><figcaption>Pass 2. The procession in the glass.</figcaption></figure>
+    </div>
+<pre class="graph"><b>source</b>  Standing Parvati, The Met 57.51.3 (Open Access)
+   |-- image --> I.   The Mould          (35mm film)
+   |-- image --> II.  The Procession     (cinematic colour)
+   |-- image --> III. The Burial         (oil painting)
+   |-- image --> IV.  The Plough         (black and white)
+   |-- image --> V.   Gallery 240, pass 1
+   |-- image --> V.   Gallery 240, pass 2 (the reflection)
+<b>text</b>    the brief + one caption per life
+<b>final</b>   five-panel strip, museum-label typography</pre>
+  </div>
+</section>
+
+<section>
+  <div class="wrap reveal">
+    <div class="eyebrow">Links</div>
+    <h2>See it in full.</h2>
+    <div class="links">
+      <a href="https://app.flora.ai/projects/ns75pfrkdk6fe2bk0kg78aynvh8e1e0t"><span>FLORA canvas</span>Every node, every pass, the final strip</a>
+      <a href="https://www.metmuseum.org/art/collection/search/39325"><span>The original</span>Standing Parvati at The Met, Open Access</a>
+      <a href="https://contra.com/community/topic/floramuseumchallenge"><span>The challenge</span>FLORA Museum Challenge on Contra</a>
+      <a href="https://x.com/TheHardikDewra"><span>The post</span>Thread on X, #FLORAMuseum</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    Made by <a href="https://wedesignlandingpages.com">Hardik Dewra</a> on the FLORA canvas, 8 September 2026. Source image courtesy The Metropolitan Museum of Art, Open Access (CC0).
+  </div>
+</footer>
+
+<script>
+  const io = new IntersectionObserver((entries) => {
+    for (const e of entries) if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+</body>
+</html>
