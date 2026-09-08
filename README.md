@@ -15,7 +15,8 @@ A Chola bronze was never meant to live in a glass case. She was cast to be dress
 ## Links
 
 - Showcase page: `index.html` (GitHub Pages: https://thehardikdewra.github.io/flora-museum-challenge-2026-09-08/)
-- FLORA canvas, every node and pass: https://app.flora.ai/projects/ns75pfrkdk6fe2bk0kg78aynvh8e1e0t
+- FLORA canvas, every node and pass (public link): https://app.flora.ai/join-project/b4596e48-4f55-4a11-a26a-58ea5751c6ab
+- X thread: https://x.com/TheHardikDewra/status/2097211501321036047
 - The original: https://www.metmuseum.org/art/collection/search/39325
 - The challenge: https://contra.com/community/topic/floramuseumchallenge
 
